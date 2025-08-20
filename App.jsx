@@ -4,9 +4,8 @@ import _React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-// ✅ Replace these with your actual Supabase credentials
 const supabaseUrl = 'https://zixuttcztlqtgukgeffb.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'; // full anon key here
+const supabaseKey = 'YOUR_SUPABASE_ANON_KEY'; // Replace with your actual anon key
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function App() {
@@ -93,4 +92,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: { padding: 20, marginTop: 50 },
   header: { fontSize: 26, fontWeight: 'bold', marginBottom: 10 },
-  sub: { fontSize: 16, margin
+  sub: { fontSize: 16, marginBottom: 20 },
+  input: { borderWidth: 1, padding: 10, marginBottom: 10, borderRadius: 5 },
+  item: { padding: 10, borderBottomWidth: 1 },
+  itemTitle: { fontSize: 18 },
+  itemScore: { fontSize: 14, color: 'gray' }
+});
