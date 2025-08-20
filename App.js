@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, FlatList, StyleSheet, Alert } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://your-project-id.supabase.co';
-const supabaseKey = 'your-anon-key';
-const supabase = createClient(https://zixuttcztlqtgukgeffb.supabase.co, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InppeHV0dGN6dGxxdGd1a2dlZmZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU2ODM3NzIsImV4cCI6MjA3MTI1OTc3Mn0.aVLwuHChXJW100S6OY61NTeP5bXuyLZIE2PvBm-rSA0);
+const supabaseUrl = 'https://zixuttcztlqtgukgeffb.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'; // Replace with full anon key
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default function App() {
   const [email, setEmail] = useState('');
